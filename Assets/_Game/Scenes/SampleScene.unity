@@ -336,3 +336,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d837eb6b2bb4545adeb6261379b02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1096220950018952062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477801539456599589, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723394266149577347, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
+      propertyPath: m_Name
+      value: Apple G Sliced
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3fc15d7b0755ebd4583d8392cc7f37e9, type: 3}
