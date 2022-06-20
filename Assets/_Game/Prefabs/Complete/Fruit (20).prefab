@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5845059277530662559}
   - component: {fileID: 8648870928619619897}
   - component: {fileID: 3565220794090634385}
+  - component: {fileID: -335556551597195624}
   m_Layer: 0
   m_Name: Fruit (20)
   m_TagString: Untagged
@@ -85,6 +86,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startForce: 15
+  fruitsSliced: {fileID: 2835337041706219956, guid: f6527afa374b94a4dad0579c50752561, type: 3}
+--- !u!114 &-335556551597195624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265801121083894614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de542c78974e22e41b372fca4e772a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4411464256250469614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,7 +154,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 03e369d5e00ed4e3f8dc8fe5ed924d07, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 03e369d5e00ed4e3f8dc8fe5ed924d07, type: 3}
 --- !u!4 &4411464256250332782 stripped
 Transform:

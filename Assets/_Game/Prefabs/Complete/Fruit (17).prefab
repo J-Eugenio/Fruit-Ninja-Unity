@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4985717149136005073}
   - component: {fileID: 7972822845903838172}
   - component: {fileID: 261504026745124004}
+  - component: {fileID: -959774267353057372}
   m_Layer: 0
   m_Name: Fruit (17)
   m_TagString: Untagged
@@ -85,6 +86,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startForce: 15
+  fruitsSliced: {fileID: 294492100076658712, guid: d43c6a6a2f4d9854e814aff63ae83cb2, type: 3}
+--- !u!114 &-959774267353057372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566419755643316737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de542c78974e22e41b372fca4e772a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4708323003250519505
 PrefabInstance:
   m_ObjectHideFlags: 0
