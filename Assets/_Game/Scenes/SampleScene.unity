@@ -990,7 +990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609257203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040852196}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ButtonPauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &609257203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,6 +1380,7 @@ MonoBehaviour:
   watermelonColor:
     serializedVersion: 2
     rgba: 4281445782
+  score: 0
 --- !u!4 &877036107
 Transform:
   m_ObjectHideFlags: 0
@@ -1465,7 +1478,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 905316816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040852196}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ButtonClosePanelPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &905316816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,7 +1911,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1300972944}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040852196}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ButtonClosePanelPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1300972944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,6 +2667,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022426298}
   m_CullTransparentMesh: 1
+--- !u!1 &2040852195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040852197}
+  - component: {fileID: 2040852196}
+  m_Layer: 0
+  m_Name: UI Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2040852196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040852195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320387e97934ac84e877dafedf04a878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtScore: {fileID: 1360758342}
+  txtHighScore: {fileID: 848118307}
+  imgLives:
+  - {fileID: 306852256}
+  - {fileID: 223743723}
+  - {fileID: 177024773}
+  btnPause: {fileID: 609257202}
+  btnResume: {fileID: 1300972943}
+  btnMainMenu: {fileID: 2022426300}
+  btnClonePauseMenu: {fileID: 905316815}
+  btnSounds: {fileID: 429079759}
+  panelGame: {fileID: 788717847}
+  panelPause: {fileID: 2053942768}
+--- !u!4 &2040852197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040852195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053942768
 GameObject:
   m_ObjectHideFlags: 0

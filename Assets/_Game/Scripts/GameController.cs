@@ -27,15 +27,24 @@ public class GameController : MonoBehaviour
     strawberryColor = new Color32(167, 0 ,21, 255), 
     tomatoColor = new Color32(142, 33, 0, 255), 
     watermelonColor = new Color32(150, 173, 49, 255);
+
+    private UIController uIController;
+
+    [HideInInspector] public int score;
     // Start is called before the first frame update
     void Start()
     {
-        
+        uIController = FindObjectOfType<UIController>();
+        score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void StartGame(){
+        uIController.txtScore.text = "Score: " + score;
     }
 }
