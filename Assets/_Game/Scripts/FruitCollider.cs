@@ -5,15 +5,19 @@ using UnityEngine;
 public class FruitCollider : MonoBehaviour
 {
     private Fruit fruit;
+    private GameController gameController;
     // Start is called before the first frame update
     void Start()
     {
         fruit = this.gameObject.GetComponent<Fruit>();
+        gameController = FindObjectOfType<GameController>();
     }
 
     private void OnTriggerEnter2D(Collider2D target) {
         if(target.gameObject.CompareTag("Blade")){
             GameObject tempFluitSliced = Instantiate(fruit.fruitsSliced, transform.position, Quaternion.identity);
+            GameObject tempSplash = Instantiate(gameController.splash, tempFluitSliced.transform.position, Quaternion.identity);
+            tempSplash.GetComponentInChildren<SpriteRenderer>().color = fruit.ChangeSplashColor(this.gameObject);
             tempFluitSliced.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().AddForce(-tempFluitSliced.transform.GetChild(0).transform.right * Random.Range(5f, 10f), ForceMode.Impulse);
             tempFluitSliced.transform.GetChild(1).gameObject.GetComponent<Rigidbody>().AddForce(tempFluitSliced.transform.GetChild(1).transform.right * Random.Range(5f, 10f), ForceMode.Impulse);
 
