@@ -17,6 +17,7 @@ public class FruitCollider : MonoBehaviour
         if(target.gameObject.CompareTag("Blade")){
             GameObject tempFluitSliced = Instantiate(fruit.fruitsSliced, transform.position, Quaternion.identity);
             GameObject tempSplash = Instantiate(gameController.splash, tempFluitSliced.transform.position, Quaternion.identity);
+            gameController.UpdateScore(this.gameObject.GetComponent<Fruit>().points);
             tempSplash.GetComponentInChildren<SpriteRenderer>().color = fruit.ChangeSplashColor(this.gameObject);
             tempFluitSliced.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().AddForce(-tempFluitSliced.transform.GetChild(0).transform.right * Random.Range(5f, 10f), ForceMode.Impulse);
             tempFluitSliced.transform.GetChild(1).gameObject.GetComponent<Rigidbody>().AddForce(tempFluitSliced.transform.GetChild(1).transform.right * Random.Range(5f, 10f), ForceMode.Impulse);

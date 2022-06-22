@@ -87,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startForce: 15
   fruitsSliced: {fileID: 7192074038861375741, guid: fed8865d12aef814e85c15d5986a4e2f, type: 3}
+  points: 10
 --- !u!114 &-7980329545159734053
 MonoBehaviour:
   m_ObjectHideFlags: 0
