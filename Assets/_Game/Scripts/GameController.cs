@@ -26,16 +26,18 @@ public class GameController : MonoBehaviour
     pomegranateColor = new Color32(188, 32, 75, 255), 
     strawberryColor = new Color32(167, 0 ,21, 255), 
     tomatoColor = new Color32(142, 33, 0, 255), 
-    watermelonColor = new Color32(150, 173, 49, 255);
+    watermelonColor = new Color32(150, 173, 49, 255),
+    uiRedColor = new Color32(255, 0, 0, 255);
 
     private UIController uIController;
 
-    [HideInInspector] public int score;
+    [HideInInspector] public int score, fruitCount;
     // Start is called before the first frame update
     void Start()
     {
         uIController = FindObjectOfType<UIController>();
         score = 0;
+        fruitCount = 0;
     }
 
     // Update is called once per frame
