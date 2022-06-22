@@ -8,12 +8,14 @@ public class UIController : MonoBehaviour
     public TMP_Text txtScore, txtHighScore;
     public Image[] imgLives;
     public Button btnPause, btnResume, btnMainMenu, btnClonePauseMenu, btnSounds;
-    public GameObject panelGame, panelPause;
+    public GameObject panelGame, panelPause, panelGameOver;
+    private GameController gameController;
     // Start is called before the first frame update
     void Start()
     {
         panelGame.gameObject.SetActive(true);
         panelPause.gameObject.SetActive(false);
+        gameController = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
@@ -32,5 +34,18 @@ public class UIController : MonoBehaviour
         panelGame.gameObject.SetActive(true);
         panelPause.gameObject.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void ShowPanelGameOver(){
+        panelGameOver.gameObject.SetActive(true);
+        panelGame.gameObject.SetActive(false);
+        gameController.GameOver();
+    }
+
+    public IEnumerator ShowBombPanelGameOver(){
+        gameController.GameOver();
+        panelGame.gameObject.SetActive(false);
+        yield return new WaitForSeconds(2);
+        panelGameOver.gameObject.SetActive(true);
     }
 }

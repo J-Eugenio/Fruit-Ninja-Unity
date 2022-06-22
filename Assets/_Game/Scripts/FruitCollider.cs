@@ -37,7 +37,7 @@ public class FruitCollider : MonoBehaviour
                 uIController.imgLives[gameController.fruitCount - 1].color = gameController.uiRedColor;
             }
             if(gameController.fruitCount >= 3){
-                Debug.Log("Game Over");
+                uIController.ShowPanelGameOver();
             }
         }
     }

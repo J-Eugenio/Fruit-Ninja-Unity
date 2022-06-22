@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour
     private UIController uIController;
 
     [HideInInspector] public int score, fruitCount;
+    [SerializeField] private GameObject fruitSpawner, blade, destroyer;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,5 +54,11 @@ public class GameController : MonoBehaviour
     public void UpdateScore(int points){
         score += points;
         uIController.txtScore.text =  "Score: " + score.ToString();
+    }
+
+    public void GameOver(){
+        fruitSpawner.gameObject.SetActive(false);
+        destroyer.gameObject.SetActive(false);
+        blade.gameObject.SetActive(false);
     }
 }
