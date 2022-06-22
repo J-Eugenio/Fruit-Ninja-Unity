@@ -27,7 +27,8 @@ public class GameController : MonoBehaviour
     strawberryColor = new Color32(167, 0 ,21, 255), 
     tomatoColor = new Color32(142, 33, 0, 255), 
     watermelonColor = new Color32(150, 173, 49, 255),
-    uiRedColor = new Color32(255, 0, 0, 255);
+    uiRedColor = new Color32(255, 0, 0, 255),
+    uiWhiteColor = new Color32(255, 255, 255, 255);
 
     private UIController uIController;
 
@@ -60,5 +61,14 @@ public class GameController : MonoBehaviour
         fruitSpawner.gameObject.SetActive(false);
         destroyer.gameObject.SetActive(false);
         blade.gameObject.SetActive(false);
+    }
+
+    public void RestartGame(){
+        score = 0;
+        fruitCount = 0;
+        uIController.txtScore.text =  "Score: " + score.ToString();
+        fruitSpawner.gameObject.SetActive(true);
+        destroyer.gameObject.SetActive(true);
+        blade.gameObject.SetActive(true);
     }
 }

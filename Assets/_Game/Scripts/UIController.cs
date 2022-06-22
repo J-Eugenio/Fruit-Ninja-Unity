@@ -48,4 +48,15 @@ public class UIController : MonoBehaviour
         yield return new WaitForSeconds(2);
         panelGameOver.gameObject.SetActive(true);
     }
+
+    public void ButtonRestartGame(){
+        panelGame.gameObject.SetActive(true);
+        panelGameOver.gameObject.SetActive(false);
+        gameController.RestartGame();
+
+        for (int i = 0; i < imgLives.Length; i++)
+        {
+            imgLives[i].color = gameController.uiWhiteColor;
+        }
+    }
 }
