@@ -22,6 +22,7 @@ public class FruitSpawner : MonoBehaviour
             Transform spawnPoint = spawnPoints[spawnIndex];
 
             GameObject fruitPrefab = Instantiate(fruitsPrefab[Random.Range(0, fruitsPrefab.Length)], spawnPoint.position, spawnPoint.rotation);
+            spawnPoint.gameObject.GetComponent<AudioSource>().Play();
             Destroy(fruitPrefab, 5f);
         }
     }

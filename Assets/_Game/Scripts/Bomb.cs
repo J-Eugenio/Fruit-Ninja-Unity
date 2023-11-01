@@ -6,11 +6,13 @@ public class Bomb : MonoBehaviour
 {
     [SerializeField] private float speed, startForce;
     [SerializeField] private GameObject beamLight;
+    private AudioController audioController;
     private Rigidbody2D myRB;
     // Start is called before the first frame update
     void Start()
     {
         myRB = this.gameObject.GetComponent<Rigidbody2D>();
+        audioController = FindObjectOfType<AudioController>();
         ApplyForce();
     }
 
@@ -35,5 +37,7 @@ public class Bomb : MonoBehaviour
         CircleCollider2D myCollider = this.gameObject.GetComponent<CircleCollider2D>();
         myCollider.enabled = false;
         GameObject tempBeamLight = Instantiate(beamLight, this.transform.position, Quaternion.identity) as GameObject;
+        this.gameObject.GetComponent<AudioSource>().clip = audioController.bombExplodeAudio;
+        this.gameObject.GetComponent<AudioSource>().Play();
     }
 }
